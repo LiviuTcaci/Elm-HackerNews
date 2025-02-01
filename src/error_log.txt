@@ -1,0 +1,70 @@
+ly@mba Elm-Project % npm test
+
+> elm-hackernews@1.0.0 pretest
+> tsc
+
+
+> elm-hackernews@1.0.0 test
+> node dist/run-tests.js
+
+Testing
+elm-test output:
+Compiling > Starting tests
+
+elm-test 0.19.1-revision12
+--------------------------
+
+Running 72 tests. To reproduce these results, run: elm-test --fuzz 100 --seed 376158560164992
+
+↓ PostsConfigTests
+↓ module Model.PostsConfig
+↓ sortBy
+✗ The final list is sorted by title when sortBy is Title
+
+    { by = "franze", id = 38127131, score = 64, time = Posix 1699010723000, title = "999 Request Denied", type_ = "story", url = Just "https://http.dev/999" }, { by = "edent", id = 38139687, score = 220, time = Posix 1699093638000, title = "A 6 channel GPS receiver from 1993", type_ = "story", url = Just "https://mastodon.sdf.org/@keelan/111349948124943603" }, { by = "lxm", id = 38137377, score = 224, time = Posix 1699063376000, title = "A blog post is a long and complex search query to find people (2022)", type_ = "story", url = Just "https://www.henrikkarlsson.xyz/p/search-query" }, { by = "greenburger", id = 38142209, score = 56, time = Posix 1699113368000, title = "A carbohydrate revolution is speeding up pro cycling", type_ = "story", url = Just "https://velo.outsideonline.com/road/road-training/a-massive-change-how-a-carbohydrate-revolution-is-speeding-up-pro-cycling/" }, { by = "robomartin", id = 38148119, score = 5, time = Posix 1699157746000, title = "A game. The only winning move is not to play", type_ = "story", url = Nothing }, { by = "knight17", id = 38140012, score = 3, time = Posix 1699096900000, title = "A guide to home row mods with QMK", type_ = "story", url = Just "https://precondition.github.io/home-row-mods" }, { by = "belter", id = 38143984, score = 106, time = Posix 1699123807000, title = "AI and Open Source in 2023", type_ = "story", url = Just "https://magazine.sebastianraschka.com/p/ai-and-open-source-in-2023" }, { by = "stevefan1999", id = 38137373, score = 313, time = Posix 1699063305000, title = "AMD MicroBlaze V Processor: A Flexible and Efficient RISC-V Processor", type_ = "story", url = Just "https://www.xilinx.com/products/design-tools/microblaze-v.html" }, { by = "cebert", id = 38126840, score = 80, time = Posix 1699008771000, title = "AMD Unveils Ryzen Mobile 7040U Series with Zen 4c Efficiency Cores", type_ = "story", url = Just "https://www.anandtech.com/show/21111/amd-unveils-ryzen-7040u-series-with-zen-4c-smaller-cores-bigger-efficiency" }, { by = "EvgeniyZh", id = 38134120, score = 56, time = Posix 1699041189000, title = "Accelerating digital block design with Google's open source Mid-Level Synthesis", type_ = "story", url = Just "https://antmicro.com/blog/2023/09/accelerating-digital-block-design-with-googles-xls/" }
+    ╷
+    │ Expect.equalLists
+    ╵
+    { by = "scrlk", id = 38114943, score = 182, time = Posix 1698939114000, title = "Intel Itanium IA-64 Support Removed with the Linux 6.7 Kernel", type_ = "story", url = Just "https://www.phoronix.com/news/Intel-IA-64-Removed-Linux-6.7" }, { by = "sillysaurusx", id = 38149093, score = 75, time = Posix 1699169400000, title = "LLM companies to access largest Chinese non-fiction book collection", type_ = "story", url = Just "https://annas-blog.org/duxiu-exclusive.html" }, { by = "vyrotek", id = 38144400, score = 512, time = Posix 1699126731000, title = "NewPipe – Lightweight YouTube experience for Android", type_ = "story", url = Just "https://newpipe.net/" }, { by = "Tepix", id = 38141366, score = 557, time = Posix 1699108556000, title = "Othello Is Solved?", type_ = "story", url = Just "https://arxiv.org/abs/2310.19387" }, { by = "sohkamyung", id = 38146382, score = 51, time = Posix 1699140957000, title = "Planes, Spheres and Pseudospheres", type_ = "story", url = Just "https://www.gregegan.net/SCIENCE/PSP/PSP.html" }, { by = "luu", id = 38144772, score = 37, time = Posix 1699129495000, title = "Representations / strategies for noncooperative games with imperfect information [pdf]", type_ = "story", url = Just "https://www2.cs.sfu.ca/~bbart/personal/masters-thesis.pdf" }, { by = "willswire", id = 38147438, score = 26, time = Posix 1699151020000, title = "Shadows Edge Software", type_ = "story", url = Just "https://www.shadowsedge.mil/What-We-Do/" }, { by = "dlock17", id = 38146154, score = 83, time = Posix 1699139194000, title = "Show HN: Gogosseract, a Go Lib for CGo-Free Tesseract OCR via Wazero", type_ = "story", url = Just "https://github.com/Danlock/gogosseract" }, { by = "pranay01", id = 38148992, score = 1, time = Posix 1699167669000, title = "SigNoz (YC W21), open source observability platform, hiring SREs (Remote)", type_ = "job", url = Just "https://signoz.io/careers/site-reliability-engineer/" }, { by = "kizunajp", id = 38146856, score = 57, time = Posix 1699145556000, title = "The First App Store", type_ = "story", url = Just "https://one-from-nippon.ghost.io/worlds-first-app-store/" }
+
+    The first diff is at index 0: it was `{ by = "franze", id = 38127131, score = 64, time = Posix 1699010723000, title = "999 Request Denied", type_ = "story", url = Just "https://http.dev/999" }`, but `{ by = "scrlk", id = 38114943, score = 182, time = Posix 1698939114000, title = "Intel Itanium IA-64 Support Removed with the Linux 6.7 Kernel", type_ = "story", url = Just "https://www.phoronix.com/news/Intel-IA-64-Removed-Linux-6.7" }` was expected.
+
+
+↓ PostsConfigTests
+↓ module Model.PostsConfig
+↓ sortBy
+✗ The final list is sorted descending by score when sortBy is Score
+
+    { by = "donohoe", id = 38122061, score = 1952, time = Posix 1698968957000, title = "Sam Bankman-Fried Convicted", type_ = "story", url = Just "https://www.nytimes.com/live/2023/11/02/business/sam-bankman-fried-trial" }, { by = "jart", id = 38101613, score = 1187, time = Posix 1698859540000, title = "Cosmopolitan Third Edition", type_ = "story", url = Just "https://justine.lol/cosmo3/" }, { by = "elvis70", id = 38132016, score = 1114, time = Posix 1699032376000, title = "As I retire, my goal now is to release 40+ years of source code", type_ = "story", url = Just "https://dunfield.themindfactory.com/dnldsrc.htm" }, { by = "g42gregory", id = 38108873, score = 792, time = Posix 1698897921000, title = "Yann LeCun: AI one-percenters seizing power forever is real doomsday scenario", type_ = "story", url = Just "https://www.businessinsider.com/sam-altman-and-demis-hassabis-just-want-to-control-ai-2023-10" }, { by = "donpott", id = 38130418, score = 674, time = Posix 1699025931000, title = "I trapped scammers in an impossible maze [video]", type_ = "story", url = Just "https://www.youtube.com/watch?v=dWzz3NeDz3E" }, { by = "ColoursofOSINT", id = 38089342, score = 666, time = Posix 1698777232000, title = "macOS Sonoma Boot Failures", type_ = "story", url = Just "https://github.com/AsahiLinux/docs/wiki/macOS-Sonoma-Boot-Failures" }, { by = "hackerbeat", id = 38089247, score = 645, time = Posix 1698776835000, title = "Copying Angry Birds with nothing but AI", type_ = "story", url = Just "https://twitter.com/javilopen/status/1719363262179938401" }, { by = "perihelions", id = 38121250, score = 605, time = Posix 1698964208000, title = "In 1886, the US commissioned watercolor paintings of every known fruit (2019)", type_ = "story", url = Just "https://www.openculture.com/2019/06/the-us-government-commissioned-7500-watercolor-paintings.html" }, { by = "soheilpro", id = 38112951, score = 591, time = Posix 1698930333000, title = "Confusing Git Terminology", type_ = "story", url = Just "https://jvns.ca/blog/2023/11/01/confusing-git-terminology/" }, { by = "Tepix", id = 38141366, score = 557, time = Posix 1699108556000, title = "Othello Is Solved?", type_ = "story", url = Just "https://arxiv.org/abs/2310.19387" }
+    ╷
+    │ Expect.equalLists
+    ╵
+    { by = "Tepix", id = 38141366, score = 557, time = Posix 1699108556000, title = "Othello Is Solved?", type_ = "story", url = Just "https://arxiv.org/abs/2310.19387" }, { by = "vyrotek", id = 38144400, score = 512, time = Posix 1699126731000, title = "NewPipe – Lightweight YouTube experience for Android", type_ = "story", url = Just "https://newpipe.net/" }, { by = "scrlk", id = 38114943, score = 182, time = Posix 1698939114000, title = "Intel Itanium IA-64 Support Removed with the Linux 6.7 Kernel", type_ = "story", url = Just "https://www.phoronix.com/news/Intel-IA-64-Removed-Linux-6.7" }, { by = "dlock17", id = 38146154, score = 83, time = Posix 1699139194000, title = "Show HN: Gogosseract, a Go Lib for CGo-Free Tesseract OCR via Wazero", type_ = "story", url = Just "https://github.com/Danlock/gogosseract" }, { by = "sillysaurusx", id = 38149093, score = 75, time = Posix 1699169400000, title = "LLM companies to access largest Chinese non-fiction book collection", type_ = "story", url = Just "https://annas-blog.org/duxiu-exclusive.html" }, { by = "kizunajp", id = 38146856, score = 57, time = Posix 1699145556000, title = "The First App Store", type_ = "story", url = Just "https://one-from-nippon.ghost.io/worlds-first-app-store/" }, { by = "sohkamyung", id = 38146382, score = 51, time = Posix 1699140957000, title = "Planes, Spheres and Pseudospheres", type_ = "story", url = Just "https://www.gregegan.net/SCIENCE/PSP/PSP.html" }, { by = "luu", id = 38144772, score = 37, time = Posix 1699129495000, title = "Representations / strategies for noncooperative games with imperfect information [pdf]", type_ = "story", url = Just "https://www2.cs.sfu.ca/~bbart/personal/masters-thesis.pdf" }, { by = "willswire", id = 38147438, score = 26, time = Posix 1699151020000, title = "Shadows Edge Software", type_ = "story", url = Just "https://www.shadowsedge.mil/What-We-Do/" }, { by = "pranay01", id = 38148992, score = 1, time = Posix 1699167669000, title = "SigNoz (YC W21), open source observability platform, hiring SREs (Remote)", type_ = "job", url = Just "https://signoz.io/careers/site-reliability-engineer/" }
+
+    The first diff is at index 0: it was `{ by = "donohoe", id = 38122061, score = 1952, time = Posix 1698968957000, title = "Sam Bankman-Fried Convicted", type_ = "story", url = Just "https://www.nytimes.com/live/2023/11/02/business/sam-bankman-fried-trial" }`, but `{ by = "Tepix", id = 38141366, score = 557, time = Posix 1699108556000, title = "Othello Is Solved?", type_ = "story", url = Just "https://arxiv.org/abs/2310.19387" }` was expected.
+
+
+
+TEST RUN FAILED
+
+Duration: 166 ms
+Passed:   70
+Failed:   2
+
+ly@mba Elm-Project % npm run grade
+
+> elm-hackernews@1.0.0 pregrade
+> npm run pretest
+
+
+> elm-hackernews@1.0.0 pretest
+> tsc
+
+
+> elm-hackernews@1.0.0 grade
+> node dist/calculate-grade.js -r
+
+Running tests...
+Saving test results in ./logs/test-logs.ndjson
+Final grade (for public, automatic tests): 15/15
+ly@mba Elm-Project %
